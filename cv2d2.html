@@ -1,5 +1,5 @@
 <head>
-
+    <meta charset=utf-8>
     <style>
         #container{
             position: relative;
@@ -8,14 +8,50 @@
             top: 40px;
             margin: auto auto;
         }
+        #header{
+            position: relative;
+        }
         #name{
             position: relative;
             width: 100%;
-           
-            top: -44px;
-            height: 40px;
+           font-size: 30px;
+           color: white;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           padding-top: 3px;
+           padding-bottom: 3px;
+            top: -40px;
+            height: 34px;
             background-color: rgba(105, 105, 105, 0.9);
         }
+        #tekst{
+            margin-left: 80px;
+        }
+        #bio{
+            position:absolute;
+            top: 30px;
+            left: 350px;
+            width: 400px;
+            text-align: justify;
+        }
+        #left{
+            position: relative;
+            width: 300px;
+            top: -40px;
+            background-color: black;
+            height: 500px;
+        }
+        #right{
+            position: absolute;
+            width: 500px;
+            top: -40px;
+            left: 300px;
+            background-color:pink;
+            
+        }
+        #main{
+            position: relative;
+        }
+    
 
     </style>
 
@@ -24,17 +60,26 @@
    
 <div id=container>
     <div id=header>
-    
-        <img width=300 src = https://ocdn.eu/zapytaj/MDA_/73413d8a60b2f59f729929532d2dbf45.jpg>
-
-        bio
-    
+        <div id=zdj>
+            <img width=300 src = https://ocdn.eu/zapytaj/MDA_/73413d8a60b2f59f729929532d2dbf45.jpg>
+        </div>
+        <div id=bio>
+        Różnorakie i określenia dalszych kierunków postępowego wychowania. Prawdą jest, 
+        iż skoordynowanie pracy obu urzędów spełnia istotną rolę w restrukturyzacji przedsiębiorstwa.
+        Jak już mówiłem jasne jest ważne z&nbsp;powodu kierunków postępowego wychowania. Pomijając fakt, 
+        że rozszerzenie naszej działalności ukazuje nam horyzonty postaw uczestników wobec zadań 
+        stanowionych przez organizację. Tak samo istotne jest ważne z dotychczasowymi zasadami nowych 
+        propozycji. Reasumując. zawiązanie koalicji koliduje z dotychczasowymi zasadami dalszych poczynań. 
+        Nie zapominajmy jednak, że wzmocnienie i realizacji form oddziaływania. 
+        </div>
     </div>
     
     <div id = name>
-        Jan Nowak
+        <div id=tekst>Jan Nowak</div>
     </div>
+    
     <div id=main>
+       <div id=left>
         ul. Śląska 7
         85-233 Bydgoszcz
         tel: 555 666 666
@@ -46,13 +91,15 @@
 
 
         languages
-        ---------------------------
+    </div>
+    <div id=right>
         exper
 
         Educ
         Certific
 
         references
+    </div>
     </div>
 </div>
 
