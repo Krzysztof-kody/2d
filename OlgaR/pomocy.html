@@ -4,21 +4,39 @@
 
    <style>
      #kontener{
-       background-color: rgba(127, 255, 212, 0.603);
+       background-color: rgb(77, 145, 122);
        width: 800px;
        border: 2px solid black;
        top:auto;
        margin: auto auto;
      }
      #imie{
-       background-color: rgba(0, 0, 0, 0.507);
+       position: relative;
+       background-color: rgba(0, 0, 0, 0.637);
        width: 100%;
        color: blanchedalmond;
        font-size: 40px;
        height: 50px;
-       top: -40px;
+       top: -50px;
+       
      }
-
+     #tekst{
+       margin-left: 100px;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       font-weight: 100;
+     }
+     #bio{
+       position:absolute;
+       margin-left: 350px;
+       top: 40px;
+     }
+     #kolumna{
+       position: relative;
+       top: -50px;
+       margin-right: 500px;
+       height: 500px;
+       background-color:rgb(144, 177, 166)
+     }
    </style>
 
 </head>
@@ -29,11 +47,19 @@
 
 <div id = kontener>
 
-   <img width=400px src=https://static.wikia.nocookie.net/dreamworks-polska/images/3/39/Shrek.jpg/revision/latest?cb=20170212103106&path-prefix=pl> 
+   <img width=300px height= 400px src=https://st.depositphotos.com/1814084/1728/i/600/depositphotos_17284875-stock-photo-shrek.jpg> 
 
-   bio
+   <div id=bio>
+        bio, siema siema jeszcze napisze super bio
+   </div>
+
    <div id = imie>
-     To ja
+     <div id=tekst>To ja</div>
+  </div>
+  <div id=kolumna>
+    <div>miejsce zamieszkania:</div>
+    <div>wykształcenie:</div>
+    <div>dokonania:</div
   </div>
 </div>
 </body> 
