@@ -1,4 +1,6 @@
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">    
     <meta charset="utf-8">
     <style>
         body{
@@ -25,6 +27,8 @@
             width: 300px;
             height: 300px;
             background-color: aquamarine;
+            background-image: url(https://techcommunity.microsoft.com/t5/image/serverpage/image-id/217078i525F6A9EF292601F/image-size/large?v=v2&px=999);
+            background-size: cover;
         }
         #bio{
             position: absolute;
@@ -32,9 +36,29 @@
             left: 300px;
             width: 500px;
             height: 300px;
-            background-color: blueviolet;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #bioTekst{
+            text-align: justify;
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 400px;
+            height: 210px;
+            background-color: white;
+        }
+
+        #tekst{
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            color: white;
+            margin-left: 120px;
+            margin-top: 10px;
         }
         #name{
+            
             position: absolute;
             top: 250px;
             left: 0px;
@@ -51,21 +75,17 @@
             
         }
         #left{
-            position: absolute;
+            position: relative;
             top: 0px;
             left: 0px;
             width: 300px;
-            border-left: 1px solid black;
-            border-bottom: 1px solid black;     
-            background-color:seagreen;
+            background-color:#ffe2ec;
         }
         #right{
             position: absolute;
             top: 0px;
             left: 300px;
             width: 500px;
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;     
             
             background-color:springgreen;
         }
@@ -80,9 +100,9 @@
     <div id= contener>
 
         <div id=header> 
-            <div id= picture> pic </div>
-            <div id= bio> bio </div>
-            <div id= name> name </div>
+            <div id= picture> &nbsp; </div>
+            <div id= bio> <div id=bioTekst> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mi eu diam mattis molestie nec vel eros. Ut id interdum nisi. Cras urna risus, finibus in bibendum vel, luctus id tortor. Aliquam sit amet luctus mauris. Mauris posuere massa quam. Sed interdum sollicitudin nisi, consectetur lobortis velit pharetra non. Suspendisse pulvinar quam nunc, vitae vehicula erat placerat quis. Sed sollicitudin tellus sit amet diam viverra mattis. Curabitur in tincidunt magna, et elementum mauris.</div> </div>
+            <div id= name> <div id=tekst>Jan Kowalski </div></div>
 
         </div>
         <div id=main>
