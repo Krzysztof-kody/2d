@@ -1,72 +1,107 @@
 <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <style>
         #container{
             position: relative;
-            width: 700px;
+            width: 800px;
             border: 1px solid black;
             top: 40px;
             margin: auto auto;
+        }
+        #header{
+            position: relative;
         }
         #name{
             position: relative;
             width: 100%;
             font-size: 30px;
             color: white;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             padding-top: 3px;
             padding-bottom: 3px;
-            top: 0px;
+            top: -40px;
             height: 34px;
-            background-color: rgba(105, 105, 105, 0.8);
+            background-color: rgba(235, 74, 74, 0.9);
         }
         #tekst{
-            margin-left: 10px;
+            margin-left: 70px;
         }
         #bio{
-            position:absolute;
-            top: 20px;
-            left: 320px;
-            width: 370px;
+            position: absolute;
+            top: 30px;
+            left: 350px;
+            width: 400px;
+            text-align: justify;
+            }
+        #left{
+            position: relative;
+            width: 300px;
+            top: 0px;
+            background-color:coral  ;
+            height: 500px;
         }
+        #main{
+            position: relative;
+        }
+        #right{
+            position: absolute;
+            width: 500px;
+            top:0px;
+            left: 300px;
+            background-color: whitesmoke;
+        }
+        #tele{
+            position: relative;
+            width: 250px;
+            margin: auto auto;
+            color: white;
+            padding top: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+
     </style>
 
 </head>
 <body>
-
-<div id = container>
+<div id=container>
     <div id=header>
-    <div id = zdj>
-        <img width=300 src = data:image/jpeg;base64,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>
-   </div>
-   <div id=bio>
-    Алексей Федорович Карамазов был и испитую, не читал, но появлявшихся уже ровно тринадцать лет пять как в углу образ, пред ним и прочитал над вратами и Алеши. Прежние знакомые его протягивала его никто из слоновой кости с той губернии и приблизил ухо свое время почти пугал иногда познаниями. Он был важный, так как бы годика ему. Он приписал равнодушие брата разнице в романе. Но зато знает правду; значит, опять с Федором Павловичем почти близкого, Алеша и так как неслыханное по редакциям газет и выходит, у нас детушки, не говорю одному важному случаю, касавшемуся более сотрясаюсь. Да, Дмитрия Федоровича, которого он.
-     </div>
+        <div id=zdjecie>
+        <img width="300" src = data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXk5ueutLfn6eqrsbTp6+zg4uOwtrnJzc/j5earsbW0uby4vcDQ09XGyszU19jd3+G/xMamCvwDAAAFLklEQVR4nO2d2bLbIAxAbYE3sDH//7WFbPfexG4MiCAcnWmnrzkjIRaD2jQMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMw5wQkHJczewxZh2lhNK/CBOQo1n0JIT74/H/qMV0Z7GU3aCcVPuEE1XDCtVLAhgtpme7H0s1N1U7QjO0L8F7llzGeh1hEG/8Lo7TUmmuSrOfns9xnGXpXxsONPpA/B6OqqstjC6Ax/0ujkNdYQQbKNi2k64qiiEZ+ohi35X+2YcZw/WujmslYewiAliVYrxgJYrdwUmwXsU+RdApUi83oNIE27YvrfB/ZPg8+BJETXnqh9CVzBbTQHgojgiCvtqU9thFJg/CKz3VIMKMEkIXxIWqIpIg2SkjYj+xC816mrJae2aiWGykxRNsW0UwiJghJDljYI5CD8GRiCtIsJxizYUPQ2pzItZy5pcisTRdk/a9m4amtNNfBuQkdVhSaYqfpNTSFGfb9GRIakrE2Pm+GFLaCQPqiu0OpWP+HMPQQcgQMiQprWXNmsVwIjQjYi/ZrhAqNTCgr2gu0Jnz85RSSjso0HkMFZ0YZjKkc26a/jlmh9JiDyDxi9oeorTYAzZkwwoMz19pzj9bnH/GP/+qbchjSGflneWYhtTuKdMOmNKZcJ5TjInQKcYXnESd/jQxy0ENpULTNGOGgxpap/oyw9pbUAqhfx2Dbkhovvfgz4iUzoM9+GlK6/Mh4q29hyC1mwro30hpVVLPF9wYQr71RazOeM5/cw81iBRD+A03aM9/C/obbrKjbYSpCmIVG3qT/Q8oeUo3Rz0IL7vI1tEbCB9pSiu8I/aV8x3Kg/BGWrWp4ZVs0nZfmAoEG4h/61yHYIJiFSl6Q0Vk6tTW1N8kYp8hdOkfHYYMXd2Qft+8CYwqYDSKvqIh+MCF8Wgca2u/cwdgeW3TtuVn6+1oBs3yLo5C2JpK6CvQzGpfUkz9UG/87gCsi5o2LIXolxN0FbwAsjOLEr+YJmXn7iR6N0BCt5p5cMxm7eAsfS+/CACQf4CTpKjzgkvr2cVarVTf96372yut7XLJ1sa7lv6VcfgYrWaxqr3Wlo1S6pvStr22sxOtTNPLzdY3nj20bPP+ejFdJYkLsjGLdtPBEbe/mr2bQKiXWJDroA+vtzc0p9aahuwqHMDYrQEXHEw9jwQl3drMpts9JBU1SdktPe5FBRdJQ6bwXBpa57ib2A8kukQDzMjh++Uo7Fo6Wd02Pkf4fknqoo4HtvAIjsqUcjx6DIPgWCaOML9rKI/oqD9/lgNrn+eF+p7j8tnzHBiR7+kdUGw/+V1Kzkc75mMy6U+FMaxjPibiM1U1uGM+puInHpmALZCgP4pt7i840MV8+0R1zPsRB6UTcqpizncYwZ89syDydfyWCwXB1l8/zRNGWbTG/GHKUm9AkxHMc/EGSk3z2+ArEhPEV5TUBLEvUGFcjEUH80J/jveTGOAJEljJbILWGQT3zRYiwuKsUXN1EEJAzBhRJFll7mBUG7KD8EqPkKekBREaL8hMDZLQSG6AQjtHPYmvTQnX0TtpC1SYCe2YdkkyLP3jj5BSbKiuR585eQhTgoje6yIb0Yb0C+mV6EYvebqw5SDy2WmubogZiF2AVxPC2FpDf8H2Q9QWo6IkjUxTWVEI3WY/wrCeSuqJ+eRWzXR/JXwgVjUMozbCOfoEZiSiKVGepqv5CJ8RyR4D7xBeamqa7z3BJ/z17JxuBPdv93d/a2Ki878MMAzDMAzDMAzDMAzDMF/KP09VUmxBAiI3AAAAAElFTkSuQmCC>
+        </div>
+
+        <div id=bio>
+            Lorem ipsum dolor sit amet libero ipsum primis in faucibus massa ut nibh. Morbi justo. Maecenas eget augue justo at risus vehicula libero. Mauris mattis et, elit. Nunc in enim. In metus. Curabitur ac felis. Integer mi at est. Pellentesque habitant morbi tristique magna ante, tincidunt vel, eros. Quisque quis molestie lorem scelerisque tellus tortor, pretium nec, accumsan orci. Sed pellentesque erat in augue varius dui. Lorem ipsum dolor sit amet ultricies ante. Nullam suscipit ultricies, hendrerit feugiat nec, dictum eu, cursus at, vehicula lectus. Phasellus sem. Mauris pretium, diam sodales pede. Sed adipiscing elit.  
+        </div>
+
+    </div>
+        <div id=name>
+
+        <div id=tekst>Konstancja Pazderska</div>
+    </div>
+    <div id=main>
+        <div id=left> 
+        <div id=tele>  
+        ul. Śląska 7 <br>
+        85-233 Bydgoszcz <br>   
+        tel: 323 444 234 <br>
+        e-mail: konstancja.paz@wp.pl<br>
+        </div>
+        skills
+
+        languages
+        <div id=right>
+        Exper
+
+        Educ
+
+        Certific
+
+        References
+        </div>
+    </div>
+
 
 </div>
-<div id=name>
-   <div id=tekst>Konstancja Pazderska</div>
-
-</div>
-<div id=main>
-     ul. 22 Stycznia xx/x
-     89-300 Wyrzysk
-     e-mail: konstancjapaz@wp.pl
-
-
-
-    Skills
-
-    Languages
-    --------------------
-    Exper
-
-    Educ
-
-    Certific
-
-    References
-</div>
-</div>
-
-</body>

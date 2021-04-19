@@ -1,6 +1,8 @@
 <head>
     <meta charset=utf-8>
-    <style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+<style>
         #container{
             position: relative;
             width: 800px;
@@ -12,14 +14,14 @@
             position: relative;
         }
         #name{
-            position: relative;
+            position: absolute;
             width: 100%;
            font-size: 30px;
            color: white;
            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
            padding-top: 3px;
            padding-bottom: 3px;
-            top: -40px;
+            top: 260px;
             height: 34px;
             background-color: rgba(105, 105, 105, 0.9);
         }
@@ -36,14 +38,14 @@
         #left{
             position: relative;
             width: 300px;
-            top: -40px;
-            background-color: black;
+            top: 0px;
+            background-color: #39464c;
             height: 500px;
         }
         #right{
             position: absolute;
             width: 500px;
-            top: -40px;
+            top: 0px;
             left: 300px;
             background-color:pink;
             
@@ -51,7 +53,44 @@
         #main{
             position: relative;
         }
-    
+        #tele{
+            position: relative;
+            font-family: 'Antonio', sans-serif;
+            width: 250px;
+            margin: auto auto;
+            color: white;
+            padding-top: 25px;
+        }
+        #skills{
+            position: relative;
+            top: 200px;            
+        }
+        .skill{
+
+        }
+        .sText{
+            font-family: 'Antonio', sans-serif;
+            
+            margin-left: 10px;
+            color: white;
+        }
+        .sBack{
+            position: relative;
+            width: 280px;
+            height: 10px;
+            background-color: white;
+            border: 1px solid black;
+            margin-left: 10px;
+        }
+        .sFore{
+            position: absolute;
+            top: 1px;
+            left: 0px;  
+            width: 100%;
+            height: 8px;
+            background-color: green;
+            
+        }
 
     </style>
 
@@ -72,25 +111,36 @@
         propozycji. Reasumując. zawiązanie koalicji koliduje z dotychczasowymi zasadami dalszych poczynań. 
         Nie zapominajmy jednak, że wzmocnienie i realizacji form oddziaływania. 
         </div>
+        <div id = name>
+            <div id=tekst>Jan Nowak</div>
+        </div>    
     </div>
     
-    <div id = name>
-        <div id=tekst>Jan Nowak</div>
-    </div>
     
     <div id=main>
        <div id=left>
-        ul. Śląska 7
-        85-233 Bydgoszcz
-        tel: 555 666 666
-        e-mail: janow@wp.pl
+       <div id = tele>
+            ul. Śląska 7 <br>
+            85-233 Bydgoszcz <br>
+            tel: 555 666 666<br>
+            e-mail: janow@wp.pl
+        </div>
 
-
-
-        Skills
-
-
+        <div id=skills>   
+            <div class=sklill>
+                <div class=sText>Angielski:</div>
+                <div class=sBack>
+                    <div class=sFore style="width: 80%;"> &nbsp; </div> 
+                </div>
+            </div>
+            <div class=sklill>
+                <div class=sText>Gotowanie:</div>
+                <div class=sBack>
+                    <div class=sFore style="width: 50%;"> &nbsp; </div> 
+                </div>
+            </div>
         languages
+        </div> 
     </div>
     <div id=right>
         exper
