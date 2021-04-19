@@ -1,45 +1,117 @@
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">    
     <meta charset="utf-8">
     <style>
         body{
             margin: 0px;
         }
-        #tytul{
-            background-color: rgb(207, 207, 207);
-            height: 100px;
-            text-align: center;
-            padding-top: 15px;
-            font-size: 70px;
-            border-bottom: 3px solid black;
-        }
-        #daneTele{
-            position: relative;
-            left: 184px;
-            top: -86px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-        }
-        #zdjProfilowe{
+        #contener{
             position: relative;
-            background-image: url(https://support.taxify.eu/hc/article_attachments/360001936880/profilepic.png);
-            width: 144px;
-            height: 96px;
-            background-size:contain;
-            left: 20px;
-            top: 10px;
+            width: 800px;
+            margin: auto auto;
+            border: 1px solid black;
+            top: 50px;
         }
+        #header{
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: aqua;
+        }
+        #picture{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            background-image: url(https://techcommunity.microsoft.com/t5/image/serverpage/image-id/217078i525F6A9EF292601F/image-size/large?v=v2&px=999);
+            background-size: cover;
+        }
+        #bio{
+            position: absolute;
+            top: 0px;
+            left: 300px;
+            width: 500px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #bioTekst{
+            text-align: justify;
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 400px;
+            height: 210px;
+            background-color: white;
+        }
+
+        #tekst{
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            color: white;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+        #name{
+            
+            position: absolute;
+            top: 250px;
+            left: 0px;
+            width: 800px;
+            height: 50px;
+            background-color: rgba(127, 127, 127, 0.9);
+        }
+        #main{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 800px;
+            background-color:saddlebrown;
+            
+        }
+        #left{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            background-color:#ffe2ec;
+        }
+        #right{
+            position: absolute;
+            top: 0px;
+            left: 300px;
+            width: 500px;
+            
+            background-color:springgreen;
+        }
+
+
     </style>
 
 </head>
 
 <body>
-    <div id=tytul>CV</div>
-    <div id=zdjProfilowe> &nbsp; </div>
-    <div id=daneTele>
-        Jan Nowak<br>
-        ul. Śląska 7<br>
-        85-233 Bydgoszcz<br>
-        tel: 555 666 666<br>
-        e-mail: janow@wp.pl
+
+    <div id= contener>
+
+        <div id=header> 
+            <div id= picture> &nbsp; </div>
+            <div id= bio> <div id=bioTekst> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu mi eu diam mattis molestie nec vel eros. Ut id interdum nisi. Cras urna risus, finibus in bibendum vel, luctus id tortor. Aliquam sit amet luctus mauris. Mauris posuere massa quam. Sed interdum sollicitudin nisi, consectetur lobortis velit pharetra non. Suspendisse pulvinar quam nunc, vitae vehicula erat placerat quis. Sed sollicitudin tellus sit amet diam viverra mattis. Curabitur in tincidunt magna, et elementum mauris.</div> </div>
+            <div id= name> <div id=tekst>Jan Kowalski </div></div>
+
+        </div>
+        <div id=main>
+            <div id = left> left </div>
+            <div id = right> right </div>
+        </div>
+
+
     </div>
+
+
 </body>
