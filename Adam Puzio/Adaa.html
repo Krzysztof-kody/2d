@@ -1,38 +1,37 @@
 <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     <style>
         #container{
             position: relative;
             width: 500;
             border: 1px solid rgb(27, 58, 236);
             margin: auto auto;
+            margin-bottom: 200px;
             top: 50px;
         }
         #panel{
-            position: relative;
+            position: absolute;
             width: 100%;
-            top: -40px;
+            top: 160px;
             height: 35px;
-            background-color: rgb(172,174,202,0.8);
+            background-color: rgb(172,174,202,0.9);
             padding-top: 2.5px;
             padding-bottom: 2.5px;
         }
-        #name{
-            top: -20px;
+        #imie{
+            top: -23px;
             position: relative;
             margin: 20px;
             font-size: 30px;
             font-style: inherit;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Antonio', sans-serif;
+            color: white;
         }
-        #bio{
-            top: -40px;
-            position: relative;
-            background-color: #e2e8e8;
-            width: 200;
-            font-size: 10px;
-        }
-        #exp{
+        #lorem{
             position: absolute;
             top: 25px;
             left: 250px;
@@ -41,24 +40,64 @@
             text-align: justify;
 
         }
+        #left{
+            position: relative;
+            background-color: #e2e8e8;
+            top: -15px;
+            width: 200;
+            height: 300px;
+            font-size: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #kontakt{
+            position: relative;
+            top: 10px;
+            margin: 15px 15px;
+        }
+        #right{
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            width: 300px;
+            background-color: pink;
+            color: black;
+        }
+        #skills{
+            position: relative;
+            margin: 10px 10px;
+        }
     </style>
 </head>
+
 <body>
     <div id=container>
         <img width = 200 height = 200 src = https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png>
+
         <div id=panel>
-        <div id=name>Jan Kowalski</div>
+            <div id=imie>Jan Kowalski</div>
         </div>
-        <div id=exp>
+
+        <div id=lorem>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div id=bio>
-            Adres:
-            Telefon:
-            Mail:
+
+        <div id=left>
+            <div id=kontakt>
+                Telefon: +48 123 456 789<br>
+                Mail: jankowalski@gmail.com<br>
+                Adres: C. K. Norwida 27<br>
+                15-419 Koziersko
+            </div>
         </div>
+
+        <div id=right>
+            <div id=skills>
+                tekst
+            </div>
+        </div>
+
+
     </div>
-    
 </body>
