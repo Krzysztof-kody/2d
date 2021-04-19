@@ -1,5 +1,7 @@
 <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <style>
         #container{
             position: relative;
@@ -7,15 +9,17 @@
             border: 1px solid black;
             top: 40px;
             margin: auto auto;
+
+            
         }
         #name{
-            position: relative;
+            position: absolute;
             width: 100%;
             font-size: 40px;
             color: white;
             padding-top: 3px;
             padding-bottom: 3px;
-            top: -40px;
+            top: 123px;
             height: 40px;
             background-color: rgba(105, 105, 105, 0.9);
             font-style: italic;
@@ -42,20 +46,55 @@
         #left{
             position:relative;
             width:300px;
-            top:-40px;
+            top:0px;
             background-color: #e2c6a2;
-            height:500px;
+            height:100%;
         }
         #right{
             position: absolute;
             width: 500px;
-            top: 175px;
+            top: 169px;
             left: 300px;
             background-color: pink;
 
         }
         #main{
             position:relative;
+            font-family: 'Roboto', sans-serif; 
+            font-size: 20px;
+        }
+        #tele{
+           position:relative;
+           font-family: 'Roboto' sans-serif;
+           width:250px;
+           margin: auto auto;
+           color: white;
+           padding-top:25px;
+        }
+        .skill{
+
+        }
+        .sText{
+          font-family: 'Roboto', sans-serif;
+          margin-left: 10px;
+          color: white;
+        }
+        .sBack{
+         width: 280px;
+         height:10px;
+         background-color: white;
+         border:1px solid black;
+         margin-left:10px;
+         position: relative;
+        }
+        .sFore{
+            position: absolute;
+            width:100%;
+            height:8px;
+            background-color:green;
+            top:1px;
+            left:0px;
+    
         }
 
     </style>
@@ -66,32 +105,60 @@
 <div id=container>
     <div id=header>
         <img width=300 src = https://i.ytimg.com/vi/EuAq5nQbJyg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCGp62Q211crFvpX0wT_Yg1inlgvA>
-
+        <div id = name>
+            <div id = tekst>
+            Json Connor
+        </div>
+        </div>
     </div>
     
-    <div id = name>
-        <div id = tekst>
-        Json Connor
-    </div>
-    </div>
+    
     <div id = bio>
         Dzień dobry. Nazywam się Json Connor i to jest moje CV. Mam 32 lata i doświadczenie w branży IT. Pracowałem w firmie Code Two przez 10 lat. Prowadzę również kanał na platformie youtube. Preferuję pracowanie w małej grupie osób, jestem otwarty na pomysły i rozwiązywanie problemów.
     </div>
     <div id=main>
         <div id= left>
-        ul. Różana 13
-        85-233 Bydgoszcz
-        tel: 892 872 557
-        e-mail: jsonconnor@wp.pl
+        <div id=tele>
+        <strong>
+        ul. Różana 13 <br>
+        85-233 Bydgoszcz <br>
+        tel: 892 872 557 <br>
+        e-mail: jsonconnor@wp.pl <br>
+         <br>
+        </strong>
+         </div>
+        <div id=skills>
+            <div class=skill>
+                <strong>
+                <div class=sText>angielski:</div>
+                </strong>
+                <div class=sBack>
+                    <div class=sfore> &nbsp;</div>
+                </div>
+            </div>
 
+    </div>
+    <div id=skills>
+            <div class=skill>
+                <strong>
+                <div class=sText>doświadczenie:</div>
+                </strong>
+                <div class=sBack>
+                    <div class=sfore> &nbsp;</div>
+                </div>
+            </div>
+            <div id=skills>
+            <div class=skill>
+                <strong>
+                <div class=sText>zaangażowanie:</div>
+                </strong>
+                <div class=sBack>
+                    <div class=sfore> &nbsp;</div>
+                </div>
+            </div>
 
-
-        Skills
-
-
-        languages
-
-        
+    </div>
+    </div>
     </div>
     </div>
     <div id = right>
