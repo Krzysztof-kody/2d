@@ -1,7 +1,8 @@
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
     <style>
-        
         #container{
             position: relative;
             width: 800px;
@@ -9,23 +10,20 @@
             top: 40px;
             margin: auto auto;
         }
-        #header{
-            position: relative;
-        }
         #name{
-            position: relative;
+            position: absolute;
             width: 100%;
             font-size: 30px;
             color: white;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             padding-top: 3px;
             padding-bottom: 3px;
-            top: -44px;
+            top: 260px;
             height: 34px;
-            background-color: rgba(105, 105, 105, 0.9);
+            background-color: rgba(105, 105, 105, 0.8);
         }
         #tekst{
-            margin-left: 70px;
+            margin-left: 55px;
         }
         #bio{
             position: absolute;
@@ -33,45 +31,73 @@
             left: 350px;
             width: 400px;
             text-align: justify;
-            }
+        }
+        #left{
+            position: relative;
+            width: 300px;
+            top: 0px;
+            background-color: rgb(196,204,223);
+            height: 500px;
+        }
+        #main{
+            position: relative;
+        }
+        #right{
+            position: absolute;
+            width: 500px;
+            top: 0px;
+            left: 300px;
+            background-color: pink;
+        }
+        #tele{
+            position: relative;
+            font-family: 'Antonio', sans-serif;
+            width: 250px;
+            margin: auto auto;
+            padding-top: 25px;
+        }
     </style>
+
 </head>
 <body>
-<div id=container>
+
+<div id = container>
     <div id=header>
-        <div id=zdjecie>
-        <img width="300" src =  https://static.zakumaj.pl/data/store/2015/10/98d0a565-4d35-88fb-5557-3977dee48380/picture_large.jpg>
-        </div>
-
-        <div id=bio>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus est et est posuere mollis. Suspendisse potenti. Nunc nec scelerisque sem, ac posuere felis. Phasellus et finibus odio. Pellentesque ornare, elit nec ullamcorper consequat, lacus ex sollicitudin nisi, ac mollis ex arcu nec mi. Integer risus lacus, rutrum ac quam at, congue varius elit. Sed ac odio vitae tortor interdum aliquam. Nunc rutrum velit id elit mattis, interdum pulvinar diam tristique. Vestibulum urna ligula, sollicitudin vitae aliquam et, placerat ac sapien.
-        </div>
-
-    </div>
-        <div id=name>
-
-        <div id=tekst>Jan Nowak</div>
-    </div>
-
-    <div id=main>    
-        ul. Śląska 7
-        85-233 Bydgoszcz
-        tel: 323 444 234
-        e-mail: jannowak@wp.pl
-
-        skills
-
-        languages
-        -----------------------------------------------
-        Exper
-
-        Educ
-
-        Certific
-
-        References
-    </div>
-
-
+    <img width=300 src = https://static.zakumaj.pl/data/store/2015/10/98d0a565-4d35-88fb-5557-3977dee48380/picture_large.jpg>
+<div id=bio>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus est et est posuere mollis. Suspendisse potenti. Nunc nec scelerisque sem, ac posuere felis. Phasellus et finibus odio. Pellentesque ornare, elit nec ullamcorper consequat, lacus ex sollicitudin nisi, ac mollis ex arcu nec mi. Integer risus lacus, rutrum ac quam at, congue varius elit. Sed ac odio vitae tortor interdum aliquam. Nunc rutrum velit id elit mattis, interdum pulvinar diam tristique. Vestibulum urna ligula, sollicitudin vitae aliquam et, placerat ac sapien.
 </div>
+
+<div id=name>
+    <div id=tekst> Jan Nowak </div>
+</div>
+</div>
+
+<div id=main>
+    <div id=left>
+        <div id=tele>
+     ul. Konopnickiej 60<br>
+     85-161 Bydgoszcz<br>
+     tel: 111 222 333<br>
+     e-mail: barpal@wp.pl<br>
+    </div>
+
+
+
+    Skills
+
+    Languages
+</div>
+<div id=right>
+    Exper
+
+    Educ
+
+    Certific
+
+    References
+</div>
+</div>
+</div>
+
 </body>
