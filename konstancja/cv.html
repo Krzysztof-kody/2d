@@ -14,14 +14,14 @@
             position: relative;
         }
         #name{
-            position: relative;
+            position: absolute;
             width: 100%;
             font-size: 30px;
             color: white;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             padding-top: 3px;
             padding-bottom: 3px;
-            top: -40px;
+            top: 260px;
             height: 34px;
             background-color: rgba(235, 74, 74, 0.9);
         }
@@ -57,11 +57,37 @@
             width: 250px;
             margin: auto auto;
             color: white;
-            padding top: 25px;
+            padding-top: 25px;
             font-family: 'Roboto', sans-serif;
         }
-    
+        #skills{
+            position: relative;
+            top: 320px;
+        }
+        .sText{
+             
+             margin-left: 10px; 
+             color: white;
+             font-family:'Roboto', sans-serif;
 
+        }   
+        .sBack{
+            width:280px;
+            height: 10px;
+            background-color: white;
+            border: 1px solid black;
+            margin-left: 10px;
+            position: relative;
+        }
+        .sFore{
+            width:100%;
+            height: 8px;
+            background-color: pink;
+            left: 0px;
+            position: absolute;
+            top: 1px;
+
+        }
     </style>
 
 </head>
@@ -76,11 +102,11 @@
             Lorem ipsum dolor sit amet libero ipsum primis in faucibus massa ut nibh. Morbi justo. Maecenas eget augue justo at risus vehicula libero. Mauris mattis et, elit. Nunc in enim. In metus. Curabitur ac felis. Integer mi at est. Pellentesque habitant morbi tristique magna ante, tincidunt vel, eros. Quisque quis molestie lorem scelerisque tellus tortor, pretium nec, accumsan orci. Sed pellentesque erat in augue varius dui. Lorem ipsum dolor sit amet ultricies ante. Nullam suscipit ultricies, hendrerit feugiat nec, dictum eu, cursus at, vehicula lectus. Phasellus sem. Mauris pretium, diam sodales pede. Sed adipiscing elit.  
         </div>
 
-    </div>
+    
         <div id=name>
-
-        <div id=tekst>Konstancja Pazderska</div>
-    </div>
+            <div id=tekst>Konstancja Pazderska</div>
+        </div>
+</div>
     <div id=main>
         <div id=left> 
         <div id=tele>  
@@ -89,9 +115,21 @@
         tel: 323 444 234 <br>
         e-mail: konstancja.paz@wp.pl<br>
         </div>
-        skills
+        <div id=skills>
+        <div class=skill>
+           <div class=sText> Angielski: </div>
+           <div class = SBack>
+            <div class=sFore style="width: 80%;">&nbsp;</div>
+        </div>
+        <div class=skill>
+       <div class=sText> Gotowanie: </div>
+       <div class = sBack>
+        <div class=sFore style="width: 50%;">&nbsp;
+        </div>
+    </div>
+    </div>
 
-        languages
+    
         <div id=right>
         Exper
 
@@ -100,8 +138,11 @@
         Certific
 
         References
-        </div>
-    </div>
+        
+    
+</div>
+</div>
 
 
 </div>
+</body>
