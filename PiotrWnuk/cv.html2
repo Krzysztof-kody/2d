@@ -1,0 +1,174 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #container{
+            position: relative;
+            width: 800px;
+            border: 1px solid black;
+            top: 40px;
+            margin: auto auto;
+
+            
+        }
+        #name{
+            position: absolute;
+            width: 100%;
+            font-size: 40px;
+            color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            top: 123px;
+            height: 40px;
+            background-color: rgba(105, 105, 105, 0.9);
+            font-style: italic;
+            
+            
+            
+        }
+        #tekst{
+            margin-left: 50px;
+          
+            
+
+        }
+        #bio{
+            position: absolute;
+            top:10px;
+            text-align: justify;
+            left: 340px;
+            width: 400px;
+        }
+        #header{
+            position: relative;
+        }
+        #left{
+            position:relative;
+            width:300px;
+            top:0px;
+            background-color: #949494;
+            height:100%;
+        }
+        #right{
+            position: absolute;
+            width: 500px;
+            top: 169px;
+            left: 300px;
+            background-color: rgb(255, 192, 208);
+
+        }
+        #main{
+            position:relative;
+            font-family: 'Roboto', sans-serif; 
+            font-size: 20px;
+        }
+        #tele{
+           position:relative;
+           font-family: 'Roboto' sans-serif;
+           width:250px;
+           margin: auto auto;
+           color: white;
+           padding-top:25px;
+        }
+        .skill{
+
+        }
+        .sText{
+          font-family: 'Roboto', sans-serif;
+          margin-left: 10px;
+          color: white;
+        }
+        .sBack{
+         width: 280px;
+         height:10px;
+         background-color: white;
+         border:1px solid black;
+         margin-left:10px;
+         position: relative;
+        }
+        .sFore{
+            position: absolute;
+            width:100%;
+            height:8px;
+            background-color:green;
+            top:1px;
+            left:0px;
+    
+        }
+
+    </style>
+
+</head>
+<body>
+   
+<div id=container>
+    <div id=header>
+        <img width=300 src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxPyKqJRx0Thu790f9kSbQGPX5qicJDHY4w&usqp=CAU
+        <div id = name>
+            <div id = tekst>
+            Gwidon Kośliński
+        </div>
+        </div>
+    </div>
+    
+    
+    <div id = bio>
+Witam serdecznie, nazywam się Gwidon Kośliński i mam 29 lat.        
+    </div>
+    <div id=main>
+        <div id= left>
+        <div id=tele>
+        <strong>
+        ul. Budna 32A <br>
+        78-955 Szamotuły <br>
+        tel: 392 534 778 <br>
+        e-mail: gwidonkoslinski93@gmail.com <br>
+         <br>
+        </strong>
+         </div>
+        <div id=skills>
+            <div class=skill>
+                <strong>
+                <div class=sText>niemiecki:</div>
+                </strong>
+                <div class=sBack>
+                    <div class=sfore> &nbsp;</div>
+                </div>
+            </div>
+
+    </div>
+    <div id=skills>
+            <div class=skill>
+                <strong>
+                <div class=sText>pracowitość:</div>
+                </strong>
+                <div class=sBack>
+                    <div class=sfore> &nbsp;</div>
+                </div>
+            </div>
+            <div id=skills>
+            <div class=skill>
+                <strong>
+                <div class=sText>rzetelność:</div>
+                </strong>
+                <div class=sBack>
+                    <div class=sfore> &nbsp;</div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id = right>
+        exper
+
+        Educ
+        Certific
+
+        references
+    </div>
+</div>
+
+</body>
