@@ -1,19 +1,24 @@
 <head>
+    <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 <style>
 #lampka{
-position: absolute;
-margin-left: 300px;
-margin-top: 230px;
+position: relative;
+margin-left: 0px;
+margin-top: 0px;
 }
 #ksiazkaa{
-    position: absolute;
-    margin-left: 500px;
-    margin-top: 230px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 #ksiazka{
-    position: absolute;
-    margin-left: 200px;
-    margin-top: 230px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 #dziecko{
     margin-left: 45px;
@@ -27,23 +32,51 @@ margin-top: 230px;
 	 margin-left: 20px;
 }
 #dlonie{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+#ramkaksiazkaa{
+    border: 25px solid rgb(72, 141, 244);
     position: absolute;
-    margin-left: 400px;
-    margin-top: -120px;
+    margin-left: 500px;
+    margin-top: 230px;
+    z-index: 1;
 }
 #ramkaksiazka{
-    
+   border: 25px solid rgb(56, 196, 193);
+   position: absolute;
+   margin-left: 200px;
+   margin-top: 230px;
+   z-index: 1;
+}
+#ramkadlonie{
+border: 25px solid rgb(254, 126, 201);
+position: absolute;
+margin-left: 400px;
+margin-top: -120px;
+z-index: 1;
+
+}
+#ramkalampka{
+    border: 25px solid rgb(254, 202, 2);
+    position:absolute;
+   margin-left: 300px;
+    margin-top: 230px;
+    z-index: 1;
 }
 
 #text1{
     margin-top: 45px;
     margin-left: 300px;
-    font-size: 250%;
+    font-family: 'Orelega One', cursive;
+    font-size: 230%;
     color: rgb(39, 158, 216)
-}
+    }
 #text2{
     margin-top: 0px;
     margin-left: 300px;
+    font-family: 'Orelega One', cursive;
 }
 #textin1{
 	 top: 100px;
@@ -56,6 +89,8 @@ margin-top: 230px;
 	height: 50px;
 	float: left;
     margin-left: 45px;
+    color:  pink;
+    font-family: 'Orelega One', cursive;
 	}
 		
 	#container2{
@@ -93,22 +128,104 @@ margin-top: 230px;
     float: left;
     margin-left: 550px;
 	}
+
+    #games{
+        position: absolute;
+        z-index: 2;
+        margin-left: 530px;
+    margin-top: 315px; 
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 75%;
+    }
+    #practise{
+        position: absolute;
+z-index: 2;
+        margin-left: 422px;
+    margin-top: 315px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 75%;
+    }
+    #philosophy{position: absolute;
+        z-index: 2;
+        margin-left: 310px;
+    margin-top: 315px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 75%;
+    }
+    #lerning{
+        position: absolute;
+        z-index: 2;
+        margin-left: 225px;
+    margin-top: 315px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 75%;
+    }
+    #dol1{
+ margin-top: 30px;
+margin-left: 80px;
+color: white;
+font-family: 'Orelega One', cursive;
+    }
+    #dol{
+        bottom: 0px;
+    background-color: rgb(55, 195, 191);
+width: 40%;
+height: 250px;
+position: absolute;
+    }
+    #dol2{
+        color: white;
+     margin-left: 20px;
+     position: relative;
+    }
+    #dol3{
+        position: absolute;
+        color: white;
+        font-family: 'Orelega One', cursive;
+        margin-top: -10px;
+        margin-left: 125px;
+    }
 </style>
 </head>
 <body>
 
+<div id=ramkalampka>
 <div id=lampka>
-<img src="zdj/lampka.png" alt="lampka" width="100" height="100">
+<img src="zdj/lampka.png" alt="lampka" width="50" height="51">
+</div>
 </div>
 
-<div id=ksiazkaa>
-<img src="zdj/ksiazkaa.png" alt="lampka" width="100" height="100">
+
+<div id=ramkaksiazkaa>
+ <div id=ksiazkaa>
+ <img src="zdj/ksiazkaa.png" alt="lampka" width="50" height="51">
+ </div>
+ </div>
+ <div id=mix>
+    <div id=games>
+        GAMES </br>
+    </div>
+    <div id=practise>
+        PRACTISE</br>
+    </div>
+    <div id=philosophy>
+        PHILOSOPHY</br>
+    </div>
+<div id=lerning>
+    LERNING</br>
 </div>
-<div id=ramkaksiazka>
+
+ </div>
+
+ <div id=ramkaksiazka>
      <div id=ksiazka>
-     <img src="zdj/ksiazka.png" alt="lampka" width="100" height="100">
+     <img src="zdj/ksiazka.png" alt="lampka" width="50" height="51">
      </div>
-</div>
+ </div>
 
 <div id=dziecko>
 <img src="zdj/dziecko.jpg" alt="lampka" width="300" height="350" >
@@ -118,15 +235,19 @@ margin-top: 230px;
 <img src="zdj/gradient.png" alt="lampka" width="300" height="250">
 </div>
 
+<div id=ramkadlonie>
 <div id=dlonie>
-<img src="zdj/dlonie.png" alt="lampka" width="100" height="100">
+  <img src="zdj/dlonie.png" alt="lampka" width="50" height="51">
+  </div>
 </div>
-<div id=textin1>
-<div id=text1>
+
+
+  <div id=textin1>
+  <div id=text1>
    WHO SAID</br>
    EDUCATION</br>
    IS BORING?</br>
-</div>
+  </div>
 <div id=text2>
 We play and learn
 </div>
@@ -134,7 +255,7 @@ We play and learn
 
 <div id="container1">
     
-        EDUCATION                       
+        EDUCATION </br>                      
    
 </div>
 <div id="container3">
@@ -156,6 +277,19 @@ We play and learn
     
         PAGE 5                       
    
+</div>
+<div id=dol>
+   <div id=dol1>
+    Kids Loved How We Treat Them</br>
+</div>
+<div id=dol2>
+    ____________
+</div>
+<div id=dol3>
+    Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię stracił. Dziś człowieka rodu, obyczajów! Dość, że zdradza! Taka była gazetą gdy potem Sędzia nigdy sługom nie odrodził dobrze na nim spostrzegł się, mówiąc, że był majstrem z nieba czas i z legiją Dunaj tam ma jutro solwuję i ukazach licznyc.
+
+</div>
+
 </div>
 
 
