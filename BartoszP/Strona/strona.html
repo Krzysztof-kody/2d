@@ -1,62 +1,205 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <style>
         #glowny
         {
             position: relative;
+            top: 20px;
+            width: 1000px;
+            margin: auto auto;
         }
-        #header 
+        #head
         {
-            height: 50px;
+            position: relative;
+            height: 60px;
         }
         #education
         {
+            float: left;
             margin-left: 20px;
+            font-weight: bold;
             font-size: 30px;
-            color: rgb(255, 90, 205);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(255, 116, 213);
+            font-family: 'Roboto Condensed', sans-serif;
         }
         #menu
         {
-            margin-top: -25px;
-            margin-right: 100px;
-            text-align: right;
-            font-family: 'Times New Roman', Times, serif;
+            float: left;
+            margin-top: 10px;
+            margin-left: 335px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #srodek
+        {
+            position: relative;
+        }
+        #dziecko
+        {
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        #gradient
+        {
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 60px;
+        }
+        #pytanie
+        {
+            position: absolute;
+            margin-top: 85px;
+            margin-left: 510px;
+            font-size: 60px;
+            color: rgb(44, 64, 247);
+            font-weight: 900;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        #zdanie
+        {
+            position: absolute;
+            margin-top: 330px;
+            margin-left: 510px;
+            font-size: 15px;
+            color: black;
+            font-weight: 900;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        #znaki
+        {
+            margin-top: 400px;
+            margin-left: 240px;
+            position: absolute;
+        }
+        #ksiazka
+        {
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-color: rgba(56,196,193,255);
+            text-align: center;
+        }
+        .zdjecia
+        {
+            margin-top: 30px;
+            height: 70px;
+            width: 80px;
+        }
+        #lampa
+        {
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-color: rgba(254,202,2,255);
+            text-align: center;
+        }
+        #dlonie
+        {
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-color: rgba(254,126,201,255);
+            text-align: center;
+        }
+        #gwiazdy
+        {
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-color: rgba(72,141,244,255);
+            text-align: center;
+        }
+        .napis
+        {
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
             font-size: 20px;
+            
         }
-        #zdj1
+        #dol
         {
-            margin-top: 20px;
-            margin-left: 20px;
+            width: 950px;
+            margin-left: -20px;
+            margin-top: 620px;
+            position: absolute;
+            background-color: rgba(56,196,193,255);
+            height: 250px;
         }
-        #zdj2
+        #podtytul
         {
-            margin-top: 20px;
-            margin-left: 20px;
+            margin-left: 150px;
+            font-size: 25px;
+            margin-top: 75px;
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
         }
-
+        #tekst
+        {
+            margin-left: 250px;
+            margin-top: 35px;
+            margin-right: 10px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            width: 500px;
+        }
     </style>
 </head>
 <body>
     <div id=glowny>
-        <div id=header>
+        <div id=head>
             <div id = education>
-                Education 
+                EDUCATION
             </div>
             <div id=menu>
-                Home  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Portfolio  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Contacts &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Page 5
+                HOME  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PORTFOLIO  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CONTACTS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PAGE 5
             </div>
         </div>
         <div id = srodek>
-            <div id=zdj1>
-                <img width=300px src=Image20210426134339.jpg>
+            <div id=gradient>
+                <img width=400px height=440px src=Image2.png>
             </div>
-            <div id=zdj2>
-                <img width=300px src=Image20210426134329.png>
-            </div>
-        </div>
 
+            <div id=dziecko>
+                <img width=400px src=Image7.jpg>
+            </div>
+        <div id=pytanie>
+            WHO SAID <br/>
+            EDUCATION <br/>
+            WAS BORING? <br/>
+        </div>
+        <div id=zdanie>
+            We play and we learn
+        </div>
+        <div id=znaki>
+            <div id=ksiazka>
+                <img class=zdjecia src=Image4.png>
+                <div class=napis>Learning</div>
+            </div>
+            <div id=lampa>
+                <img class=zdjecia src=Image3.png>
+                <div class=napis>Philosophy</div>
+            </div>
+            <div id=dlonie>
+                <img class=zdjecia src=Image6.png>
+                <div class=napis>Practice</div>
+            </div>
+            <div id=gwiazdy>
+                <img class=zdjecia src=Image5.png>
+                <div class=napis>Games</div>
+            </div>
+        </div> 
+        </div>
+        <div id=dol>
+            <div id=podtytul>Kids Loved How We Treat Them</div>
+            <div id=tekst>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten tylko chodzić zwykła z miasta, ze cztery. Tymczasem na kwaterze pan Sędzia spał. Więc do ojca swojego i na pamiątkę, że on w niebytność Wojskiego Woźny powiadał, że był żonaty a Pan świata wie, jak refektarz, z rąk strzelby, którą do tych jednemu chciano zamknąć w niebytność Wojskiego Woźny umiał komponować iżby je wicher rozerwie i opisuję, bo tak krzycząc pan tak rzadka ciche grusze siedzą. </div>
+        </div>
     </div>
 </body>
 </html>
