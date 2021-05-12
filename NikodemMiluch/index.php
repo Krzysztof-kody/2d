@@ -1,3 +1,5 @@
+<style>
+    .box{
         background-color: red;
         position: relative;
         width: 20px;
